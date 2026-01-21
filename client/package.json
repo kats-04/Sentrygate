@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm install --legacy-peer-deps && vite build",
     "lint": "eslint src --ext .js,.jsx --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,css}\"",
     "format:check": "prettier --check \"src/**/*.{js,jsx,css}\"",
@@ -20,7 +20,7 @@
     "chart.js": "^4.5.1",
     "date-fns": "^2.30.0",
     "framer-motion": "^11.0.0",
-    "lucide-react": "^0.263.0",
+    "lucide-react": "^0.468.0",
     "react": "^19.0.0",
     "react-chartjs-2": "^5.3.1",
     "react-dom": "^19.0.0",
