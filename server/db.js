@@ -3,12 +3,12 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const { MONGO_URI, USE_IN_MEMORY_DB } = process.env;
+const { MONGODB_URI, USE_IN_MEMORY_DB } = process.env;
 let mongoMemoryServer = null;
 
 export async function connectDB() {
   try {
-    let uri = MONGO_URI;
+    let uri = MONGODB_URI;
 
     // If explicitly requested or no MONGO_URI provided, start an in-memory server
     if (USE_IN_MEMORY_DB === 'true' || !uri) {
