@@ -70,7 +70,7 @@ export async function register(req, res) {
 
     // Send welcome email (don't block registration if email fails)
     const welcomeTemplate = emailTemplates.welcome(user.name);
-    await sendEmail(user.email, welcomeTemplate.subject, welcomeTemplate.html).catch(err => {
+    sendEmail(user.email, welcomeTemplate.subject, welcomeTemplate.html).catch(err => {
       console.warn('Welcome email failed (non-critical):', err.message);
     });
 
@@ -134,7 +134,7 @@ export async function login(req, res) {
 
   // Send login notification email (don't block login if email fails)
   const loginTemplate = emailTemplates.securityAlert('Successful Login', `Your account was accessed from ${req.ip || 'unknown location'}`);
-  await sendEmail(user.email, loginTemplate.subject, loginTemplate.html).catch(err => {
+  sendEmail(user.email, loginTemplate.subject, loginTemplate.html).catch(err => {
     console.warn('Login notification email failed (non-critical):', err.message);
   });
 
