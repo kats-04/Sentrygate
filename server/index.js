@@ -85,6 +85,7 @@ global.io = io;
 export { io };
 
 // Middleware
+app.set('trust proxy', 1); // Trust Render's proxy
 app.use(helmet());
 app.use(cors({ origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173', credentials: true }));
 
