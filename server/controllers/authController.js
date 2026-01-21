@@ -142,7 +142,7 @@ export async function login(req, res) {
 }
 
 export async function logout(req, res) {
-  res.clearCookie('token', { httpOnly: true, secure: COOKIE_SECURE, sameSite: 'strict', path: '/' });
+  res.clearCookie('token', { httpOnly: true, secure: COOKIE_SECURE, sameSite: COOKIE_SECURE ? 'none' : 'lax', path: '/' });
   if (req.user && req.user._id) {
     await Activity.create({
       actorId: req.user._id,

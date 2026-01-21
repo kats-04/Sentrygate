@@ -75,7 +75,9 @@ export async function changeRole(req, res) {
       'Role Updated',
       `Your account role has been updated to <strong>${data.role}</strong>. You now have access to ${data.role} features.`
     );
-    await sendEmail(user.email, 'Account Role Update', template.html);
+    sendEmail(user.email, 'Account Role Update', template.html).catch(err => {
+      console.error('Failed to send role update email:', err.message);
+    });
   } catch (err) {
     console.error('Failed to send role update email:', err.message);
   }
