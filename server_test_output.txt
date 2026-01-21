@@ -1,0 +1,42 @@
+
+> user-dashboard-server@1.0.0 test
+> node run-tests.js
+
+
+============================================================
+USER PROFILE MANAGER - COMPREHENSIVE TEST SUITE
+============================================================
+
+
+📋 Running Unit Tests...
+
+✓ User validation tests passed
+✓ Email notification tests passed
+
+❌ Test failed: Request 9 should not be rate limited 
+
+
+📊 Running Integration Tests...
+
+✓ User registration flow test passed
+✓ Notification flow test passed
+✓ Team member workflow test passed
+✓ Security event workflow test passed
+✓ Analytics data collection test passed
+✓ Webhook event system test passed
+✓ Activity logging test passed
+
+✅ All integration tests passed!
+
+
+============================================================
+❌ SOME TEST SUITES FAILED
+============================================================
+
+npm error Lifecycle script `test` failed with error:
+npm error code 1
+npm error path C:\Users\Name\Desktop\user_profile_manager\server
+npm error workspace user-dashboard-server@1.0.0
+npm error location C:\Users\Name\Desktop\user_profile_manager\server
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c node run-tests.js

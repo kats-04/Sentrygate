@@ -1,0 +1,334 @@
+
+> user-dashboard-client@1.0.0 lint
+> eslint src --ext .js,.jsx --fix
+
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ActivityFeed.jsx
+  27:23  error  Do not use Array index in keys  react/no-array-index-key
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\GrowthTrendChart.jsx
+  19:29  warning  'data' is missing in props validation                                                                                                                                                                                                                                                                                                       react/prop-types
+  46:27  error    Do not define components during render. React will see a new component type on every render and destroy the entire subtree’s DOM nodes and state (https://reactjs.org/docs/reconciliation.html#elements-of-different-types). Instead, move this component definition out of the parent component “GrowthTrendChart” and pass data as props  react/no-unstable-nested-components
+  46:30  warning  'active' is missing in props validation                                                                                                                                                                                                                                                                                                     react/prop-types
+  46:38  warning  'payload' is missing in props validation                                                                                                                                                                                                                                                                                                    react/prop-types
+  46:47  warning  'label' is missing in props validation                                                                                                                                                                                                                                                                                                      react/prop-types
+  47:42  warning  'payload.length' is missing in props validation                                                                                                                                                                                                                                                                                             react/prop-types
+  52:37  warning  'payload[].value' is missing in props validation                                                                                                                                                                                                                                                                                            react/prop-types
+  75:29  error    Missing an explicit type attribute for button                                                                                                                                                                                                                                                                                               react/button-has-type
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\InviteUserModal.jsx
+    7:28  warning  'isOpen' is missing in props validation                                react/prop-types
+    7:36  warning  'onClose' is missing in props validation                               react/prop-types
+    7:45  warning  'onSuccess' is missing in props validation                             react/prop-types
+   36:13  error    Expected an assignment or function call and instead saw an expression  no-unused-expressions
+   74:33  error    Missing an explicit type attribute for button                          react/button-has-type
+   85:37  error    A form label must be associated with a control                         jsx-a11y/label-has-associated-control
+  100:37  error    A form label must be associated with a control                         jsx-a11y/label-has-associated-control
+  115:37  error    A form label must be associated with a control                         jsx-a11y/label-has-associated-control
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ProtectedRoute.jsx
+  9:27  warning  'children' is missing in props validation      react/prop-types
+  9:37  warning  'allowedRoles' is missing in props validation  react/prop-types
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\UserList.jsx
+  12:14  error  '_key' is assigned a value but never used  no-unused-vars
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\charts\BarChart.jsx
+  22:36  warning  'data' is missing in props validation    react/prop-types
+  22:42  warning  'title' is missing in props validation   react/prop-types
+  22:49  warning  'height' is missing in props validation  react/prop-types
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\charts\HeatmapChart.jsx
+  26:25  warning  'data' is missing in props validation         react/prop-types
+  26:31  warning  'title' is missing in props validation        react/prop-types
+  26:38  warning  'subtitle' is missing in props validation     react/prop-types
+  27:21  warning  'data.length' is missing in props validation  react/prop-types
+  35:23  warning  'data.map' is missing in props validation     react/prop-types
+  36:23  warning  'data.map' is missing in props validation     react/prop-types
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\charts\LineChart.jsx
+  24:37  warning  'data' is missing in props validation    react/prop-types
+  24:43  warning  'title' is missing in props validation   react/prop-types
+  24:50  warning  'height' is missing in props validation  react/prop-types
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\charts\PieChart.jsx
+  12:36  warning  'data' is missing in props validation    react/prop-types
+  12:42  warning  'title' is missing in props validation   react/prop-types
+  12:49  warning  'height' is missing in props validation  react/prop-types
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\layout\DashboardShell.jsx
+  11:27  warning  'children' is missing in props validation  react/prop-types
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\layout\Sidebar.jsx
+   6:8    error  Using exported name 'useSecurityAlerts' as identifier for default import  import/no-named-as-default
+  97:106  error  Do not nest ternary expressions                                           no-nested-ternary
+  98:19   error  Do not nest ternary expressions                                           no-nested-ternary
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\Avatar.jsx
+  12:7  warning  'src' is missing in props validation        react/prop-types
+  13:7  warning  'alt' is missing in props validation        react/prop-types
+  14:7  warning  'initials' is missing in props validation   react/prop-types
+  15:7  warning  'size' is missing in props validation       react/prop-types
+  16:7  warning  'className' is missing in props validation  react/prop-types
+  35:9  error    Prop spreading is forbidden                 react/jsx-props-no-spreading
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\Badge.jsx
+  12:7  warning  'children' is missing in props validation   react/prop-types
+  13:7  warning  'variant' is missing in props validation    react/prop-types
+  14:7  warning  'size' is missing in props validation       react/prop-types
+  15:7  warning  'className' is missing in props validation  react/prop-types
+  38:9  error    Prop spreading is forbidden                 react/jsx-props-no-spreading
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\Button.jsx
+  13:7  warning  'children' is missing in props validation      react/prop-types
+  14:7  warning  'variant' is missing in props validation       react/prop-types
+  15:7  warning  'size' is missing in props validation          react/prop-types
+  16:7  warning  'isLoading' is missing in props validation     react/prop-types
+  17:7  warning  'disabled' is missing in props validation      react/prop-types
+  18:7  warning  'className' is missing in props validation     react/prop-types
+  41:7  error    Missing an explicit type attribute for button  react/button-has-type
+  45:9  error    Prop spreading is forbidden                    react/jsx-props-no-spreading
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\Card.jsx
+  12:7  warning  'children' is missing in props validation   react/prop-types
+  13:7  warning  'variant' is missing in props validation    react/prop-types
+  14:7  warning  'blur' is missing in props validation       react/prop-types
+  14:7  error    'blur' is assigned a value but never used   no-unused-vars
+  15:7  warning  'padding' is missing in props validation    react/prop-types
+  16:7  warning  'className' is missing in props validation  react/prop-types
+  17:7  warning  'hoverable' is missing in props validation  react/prop-types
+  43:9  error    Prop spreading is forbidden                 react/jsx-props-no-spreading
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\CommandPalette.jsx
+   4:42  warning  'isOpen' is missing in props validation                                                                      react/prop-types
+   4:50  warning  'onClose' is missing in props validation                                                                     react/prop-types
+  34:6   error    React Hook useEffect has a missing dependency: 'commands'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  74:34  error    'index' is defined but never used                                                                            no-unused-vars
+  75:13  error    Missing an explicit type attribute for button                                                                react/button-has-type
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\EmptyState.jsx
+   6:3   warning  'icon' is missing in props validation         react/prop-types
+   7:3   warning  'title' is missing in props validation        react/prop-types
+   8:3   warning  'description' is missing in props validation  react/prop-types
+   9:3   warning  'actionLabel' is missing in props validation  react/prop-types
+  10:3   warning  'onAction' is missing in props validation     react/prop-types
+  11:3   warning  'className' is missing in props validation    react/prop-types
+  39:13  warning  'onInvite' is missing in props validation     react/prop-types
+  55:17  warning  'onUpload' is missing in props validation     react/prop-types
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\ErrorBoundary.jsx
+   4:10  error    Button not found in './Button'                       import/named
+   5:10  error    Card not found in './Card'                           import/named
+   7:26  warning  'error' is missing in props validation               react/prop-types
+   7:33  warning  'resetErrorBoundary' is missing in props validation  react/prop-types
+  39:22  warning  'error.message' is missing in props validation       react/prop-types
+  58:33  warning  'children' is missing in props validation            react/prop-types
+  58:43  warning  'fallback' is missing in props validation            react/prop-types
+  58:63  warning  'onError' is missing in props validation             react/prop-types
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\Input.jsx
+  12:7   warning  'type' is missing in props validation          react/prop-types
+  13:7   warning  'placeholder' is missing in props validation   react/prop-types
+  14:7   warning  'error' is missing in props validation         react/prop-types
+  15:7   warning  'disabled' is missing in props validation      react/prop-types
+  16:7   warning  'label' is missing in props validation         react/prop-types
+  17:7   warning  'hint' is missing in props validation          react/prop-types
+  18:7   warning  'icon' is missing in props validation          react/prop-types
+  19:7   warning  'iconPosition' is missing in props validation  react/prop-types
+  20:7   warning  'className' is missing in props validation     react/prop-types
+  21:7   warning  'id' is missing in props validation            react/prop-types
+  22:7   warning  'autoComplete' is missing in props validation  react/prop-types
+  23:7   warning  'name' is missing in props validation          react/prop-types
+  75:13  error    Prop spreading is forbidden                    react/jsx-props-no-spreading
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\Skeleton.jsx
+   3:32  warning  'className' is missing in props validation  react/prop-types
+  15:32  warning  'count' is missing in props validation      react/prop-types
+  19:28  error    Do not use Array index in keys              react/no-array-index-key
+  42:32  warning  'count' is missing in props validation      react/prop-types
+  46:31  error    Do not use Array index in keys              react/no-array-index-key
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\ThemeToggle.jsx
+  10:24  warning  'onChange' is missing in props validation      react/prop-types
+  10:41  warning  'size' is missing in props validation          react/prop-types
+  18:5   error    'applyTheme' was used before it was defined    no-use-before-define
+  57:20  error    Do not nest ternary expressions                no-nested-ternary
+  61:5   error    Missing an explicit type attribute for button  react/button-has-type
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\Toast.jsx
+  40:29  error  Missing an explicit type attribute for button  react/button-has-type
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\components\ui\ToastContainer.jsx
+  2:19  error    Unexpected use of file extension "jsx" for "./Toast.jsx"  import/extensions
+  4:27  warning  'toasts' is missing in props validation                   react/prop-types
+  4:35  warning  'removeToast' is missing in props validation              react/prop-types
+  6:15  warning  'toasts.map' is missing in props validation               react/prop-types
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\context\NotificationContext.jsx
+  14:40  warning  'children' is missing in props validation                                                                                                                               react/prop-types
+  42:13  warning  Unexpected console statement                                                                                                                                            no-console
+  55:13  warning  Unexpected console statement                                                                                                                                            no-console
+  81:19  error    The 'value' object (at line 81) passed as the value prop to the Context provider (at line 93) changes every render. To fix this consider wrapping it in a useMemo hook  react/jsx-no-constructed-context-values
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\context\ThemeContext.jsx
+  14:33  warning  'children' is missing in props validation                                                                                                          react/prop-types
+  21:5   error    'applyTheme' was used before it was defined                                                                                                        no-use-before-define
+  28:9   error    'applyTheme' was used before it was defined                                                                                                        no-use-before-define
+  33:6   error    React Hook useEffect has a missing dependency: 'theme'. Either include it or remove the dependency array                                           react-hooks/exhaustive-deps
+  54:35  error    The object passed as the value prop to the Context provider (at line 54) changes every render. To fix this consider wrapping it in a useMemo hook  react/jsx-no-constructed-context-values
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\hooks\useSecurityAlerts.js
+  28:17  warning  Unexpected console statement             no-console
+  33:17  warning  Unexpected console statement             no-console
+  39:13  warning  Unexpected console statement             no-console
+  56:9   warning  Arrow function expected no return value  consistent-return
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\hooks\useToast.js
+  9:16  error  Unary operator '++' used  no-plusplus
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\Analytics.jsx
+    4:20  error  'useQueryClient' is defined but never used      no-unused-vars
+  145:17  error  A form label must be associated with a control  jsx-a11y/label-has-associated-control
+  159:17  error  A form label must be associated with a control  jsx-a11y/label-has-associated-control
+  173:17  error  A form label must be associated with a control  jsx-a11y/label-has-associated-control
+  183:17  error  A form label must be associated with a control  jsx-a11y/label-has-associated-control
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\ApiKeys.jsx
+    2:29  error    'Eye' is defined but never used                                                                                                                                                                                                                                                                                                                                    no-unused-vars
+    2:34  error    'EyeOff' is defined but never used                                                                                                                                                                                                                                                                                                                                 no-unused-vars
+    2:48  error    'AlertCircle' is defined but never used                                                                                                                                                                                                                                                                                                                            no-unused-vars
+  152:17  error    A form label must be associated with a control                                                                                                                                                                                                                                                                                                                     jsx-a11y/label-has-associated-control
+  165:17  error    A form label must be associated with a control                                                                                                                                                                                                                                                                                                                     jsx-a11y/label-has-associated-control
+  178:29  error    A form label must be associated with a control                                                                                                                                                                                                                                                                                                                     jsx-a11y/label-has-associated-control
+  211:17  error    Missing an explicit type attribute for button                                                                                                                                                                                                                                                                                                                      react/button-has-type
+  229:15  error    Missing an explicit type attribute for button                                                                                                                                                                                                                                                                                                                      react/button-has-type
+  237:52  warning  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                    react/no-unescaped-entities
+  247:11  error    Missing an explicit type attribute for button                                                                                                                                                                                                                                                                                                                      react/button-has-type
+  335:21  error    Missing an explicit type attribute for button                                                                                                                                                                                                                                                                                                                      react/button-has-type
+  351:21  error    Missing an explicit type attribute for button                                                                                                                                                                                                                                                                                                                      react/button-has-type
+  377:15  error    The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\AuditTrail.jsx
+   1:20  error  'useEffect' is defined but never used  no-unused-vars
+  97:12  error  Do not nest ternary expressions        no-nested-ternary
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\Dashboard.jsx
+   94:15  warning  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+   94:22  warning  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  128:32  error    Do not use Array index in keys                                   react/no-array-index-key
+  179:16  error    Do not nest ternary expressions                                  no-nested-ternary
+  184:26  error    Do not use Array index in keys                                   react/no-array-index-key
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\Login.jsx
+   62:15  error    A form label must be associated with a control                   jsx-a11y/label-has-associated-control
+  186:16  warning  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  187:13  error    Missing an explicit type attribute for button                    react/button-has-type
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\NotFound.jsx
+  34:23  warning  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  34:44  warning  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  34:75  warning  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  63:13  error    Missing an explicit type attribute for button                    react/button-has-type
+  69:13  error    Missing an explicit type attribute for button                    react/button-has-type
+  75:13  error    Missing an explicit type attribute for button                    react/button-has-type
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\Notifications.jsx
+   39:7   error  'checkPushSubscription' was used before it was defined  no-use-before-define
+  167:17  error  A form label must be associated with a control          jsx-a11y/label-has-associated-control
+  199:17  error  A form label must be associated with a control          jsx-a11y/label-has-associated-control
+  214:21  error  A form label must be associated with a control          jsx-a11y/label-has-associated-control
+  246:21  error  A form label must be associated with a control          jsx-a11y/label-has-associated-control
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\Profile.jsx
+   23:17  error    'isLoading' is assigned a value but never used                      no-unused-vars
+   65:13  error    'data' is already declared in the upper scope on line 23 column 11  no-shadow
+   69:7   warning  Unexpected alert                                                    no-alert
+  158:52  error    Prop spreading is forbidden                                         react/jsx-props-no-spreading
+  159:52  error    Prop spreading is forbidden                                         react/jsx-props-no-spreading
+  168:17  error    A form label must be associated with a control                      jsx-a11y/label-has-associated-control
+  174:30  error    'e' is defined but never used                                       no-unused-vars
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\SecurityCenter.jsx
+    1:20  error    'useEffect' is defined but never used                            no-unused-vars
+  167:23  error    Missing an explicit type attribute for button                    react/button-has-type
+  183:15  error    Missing an explicit type attribute for button                    react/button-has-type
+  239:65  warning  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  242:17  error    Missing an explicit type attribute for button                    react/button-has-type
+  248:17  error    Missing an explicit type attribute for button                    react/button-has-type
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\Settings.jsx
+  171:17  error  A form label must be associated with a control  jsx-a11y/label-has-associated-control
+  184:17  error  A form label must be associated with a control  jsx-a11y/label-has-associated-control
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\SignUp.jsx
+   34:30  error  Unary operator '++' used                        no-plusplus
+   35:55  error  Unary operator '++' used                        no-plusplus
+   36:32  error  Unary operator '++' used                        no-plusplus
+   37:39  error  Unary operator '++' used                        no-plusplus
+  144:15  error  A form label must be associated with a control  jsx-a11y/label-has-associated-control
+  301:13  error  Missing an explicit type attribute for button   react/button-has-type
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\Teams.jsx
+   21:5   error  'fetchTeams' was used before it was defined    no-use-before-define
+  180:23  error  Missing an explicit type attribute for button  react/button-has-type
+  193:14  error  Comparing to itself is potentially pointless   no-self-compare
+  195:17  error  Missing an explicit type attribute for button  react/button-has-type
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\pages\admin\AdminDashboard.jsx
+   18:9    error    'fetchSettings' was used before it was defined                                                                 no-use-before-define
+   64:25   error    A form label must have accessible text                                                                         jsx-a11y/label-has-associated-control
+   81:25   error    A form label must have accessible text                                                                         jsx-a11y/label-has-associated-control
+  102:25   error    A form label must be associated with a control                                                                 jsx-a11y/label-has-associated-control
+  119:25   error    A form label must have accessible text                                                                         jsx-a11y/label-has-associated-control
+  149:9    error    'fetchUsers' was used before it was defined                                                                    no-use-before-define
+  150:8    error    React Hook useEffect has a missing dependency: 'fetchUsers'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  177:14   warning  Unexpected confirm                                                                                             no-alert
+  209:100  error    Do not nest ternary expressions                                                                                no-nested-ternary
+  222:37   error    Missing an explicit type attribute for button                                                                  react/button-has-type
+  230:41   error    Missing an explicit type attribute for button                                                                  react/button-has-type
+  249:17   error    Missing an explicit type attribute for button                                                                  react/button-has-type
+  257:17   error    Missing an explicit type attribute for button                                                                  react/button-has-type
+  271:12   error    'loading' is assigned a value but never used                                                                   no-unused-vars
+  275:9    error    'fetchLogs' was used before it was defined                                                                     no-use-before-define
+  276:8    error    React Hook useEffect has a missing dependency: 'fetchLogs'. Either include it or remove the dependency array   react-hooks/exhaustive-deps
+  371:21   error    Missing an explicit type attribute for button                                                                  react/button-has-type
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\utils\api.js
+  95:14  error  Default parameters should be last  default-param-last
+  95:24  error  Default parameters should be last  default-param-last
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\utils\cacheManager.js
+    1:1  error  File has too many classes (2). Maximum allowed is 1       max-classes-per-file
+  102:5  error  Unnecessary try/catch wrapper                             no-useless-catch
+  119:3  error  Expected 'this' to be used by class method 'getQueryKey'  class-methods-use-this
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\utils\performanceOptimization.jsx
+    2:22  error    Missing file extension for "../ui/Skeleton"                                                                                                                                                                                                                  import/extensions
+    2:22  error    Unable to resolve path to module '../ui/Skeleton'                                                                                                                                                                                                            import/no-unresolved
+   10:18  error    Prop spreading is forbidden                                                                                                                                                                                                                                  react/jsx-props-no-spreading
+   48:32  error    The ref value 'ref.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'ref.current' to a variable inside the effect, and use that variable in the cleanup function        react-hooks/exhaustive-deps
+   57:36  warning  'children' is missing in props validation                                                                                                                                                                                                                    react/prop-types
+   57:46  warning  'fallback' is missing in props validation                                                                                                                                                                                                                    react/prop-types
+   69:29  warning  'src' is missing in props validation                                                                                                                                                                                                                         react/prop-types
+   69:34  warning  'alt' is missing in props validation                                                                                                                                                                                                                         react/prop-types
+   69:39  warning  'className' is missing in props validation                                                                                                                                                                                                                   react/prop-types
+   69:55  warning  'blurDataURL' is missing in props validation                                                                                                                                                                                                                 react/prop-types
+   98:35  error    The ref value 'imgRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'imgRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+  150:48  warning  'children' is missing in props validation                                                                                                                                                                                                                    react/prop-types
+  151:8   error    Prop spreading is forbidden                                                                                                                                                                                                                                  react/jsx-props-no-spreading
+
+C:\Users\Name\Desktop\user_profile_manager\client\src\utils\pushNotifications.js
+   4:47  warning  Expected to return a value at the end of async arrow function  consistent-return
+   8:7   warning  Unexpected console statement                                   no-console
+  30:29  error    'urlBase64ToUint8Array' was used before it was defined         no-use-before-define
+  87:39  error    Unary operator '++' used                                       no-plusplus
+
+✖ 232 problems (121 errors, 111 warnings)
+
+npm error Lifecycle script `lint` failed with error:
+npm error code 1
+npm error path C:\Users\Name\Desktop\user_profile_manager\client
+npm error workspace user-dashboard-client@1.0.0
+npm error location C:\Users\Name\Desktop\user_profile_manager\client
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c eslint src --ext .js,.jsx --fix

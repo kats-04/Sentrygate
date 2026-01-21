@@ -1,0 +1,69 @@
+
+> user-dashboard-server@1.0.0 lint
+> eslint . --ext .js --fix
+
+
+C:\Users\Name\Desktop\user_profile_manager\server\controllers\authController.js
+   3:1  error  Dependency cycle via ../index.js:2=>./routes/auth.js:14  import/no-cycle
+   3:8  error  'SecurityMonitor' is defined but never used              no-unused-vars
+  80:9  error  'ipAddress' is assigned a value but never used           no-unused-vars
+
+C:\Users\Name\Desktop\user_profile_manager\server\db.js
+  16:43  error  'mongodb-memory-server' should be listed in the project's dependencies, not optionalDependencies  import/no-extraneous-dependencies
+
+C:\Users\Name\Desktop\user_profile_manager\server\index.js
+   10:10  error  'dirname' is defined but never used                                                                                                                                                   no-unused-vars
+   13:8   error  Using exported name 'connectDB' as identifier for default import                                                                                                                      import/no-named-as-default
+   14:1   error  Dependency cycle via ../controllers/authController.js:2=>../utils/SecurityMonitor.js:3                                                                                                import/no-cycle
+   41:7   error  '__filename' is assigned a value but never used                                                                                                                                       no-unused-vars
+  112:9   error  'start' is already declared in the upper scope on line 186 column 16                                                                                                                  no-shadow
+  154:45  error  Caution: `statsController` also has a named export `getStats`. Check if you meant to write `import {getStats} from './controllers/statsController.js'` instead                        import/no-named-as-default-member
+  155:66  error  Caution: `statsController` also has a named export `getActivityTrends`. Check if you meant to write `import {getActivityTrends} from './controllers/statsController.js'` instead      import/no-named-as-default-member
+  156:70  error  Caution: `statsController` also has a named export `getEngagement`. Check if you meant to write `import {getEngagement} from './controllers/statsController.js'` instead              import/no-named-as-default-member
+  157:47  error  Caution: `statsController` also has a named export `getDashboardSummary`. Check if you meant to write `import {getDashboardSummary} from './controllers/statsController.js'` instead  import/no-named-as-default-member
+
+C:\Users\Name\Desktop\user_profile_manager\server\middleware\cache.js
+  27:16  warning  Unexpected unnamed function  func-names
+
+C:\Users\Name\Desktop\user_profile_manager\server\models\ApiKey.js
+  73:26  warning  Unexpected unnamed function  func-names
+  80:36  warning  Unexpected unnamed function  func-names
+  84:32  warning  Unexpected unnamed function  func-names
+
+C:\Users\Name\Desktop\user_profile_manager\server\models\SystemSetting.js
+  28:43  warning  Unexpected unnamed async function           func-names
+  31:12  error    Redundant use of `await` on a return value  no-return-await
+
+C:\Users\Name\Desktop\user_profile_manager\server\models\User.js
+  29:24  warning  Unexpected unnamed async function  func-names
+  39:38  warning  Unexpected unnamed function        func-names
+  44:34  warning  Unexpected unnamed function        func-names
+
+C:\Users\Name\Desktop\user_profile_manager\server\models\Webhook.js
+  48:33  warning  Unexpected unnamed async function  func-names
+
+C:\Users\Name\Desktop\user_profile_manager\server\routes\auth.js
+  2:1  error  Dependency cycle via ../utils/SecurityMonitor.js:3=>../index.js:2  import/no-cycle
+
+C:\Users\Name\Desktop\user_profile_manager\server\routes\users.js
+  2:10  error  'z' is defined but never used  no-unused-vars
+
+C:\Users\Name\Desktop\user_profile_manager\server\utils\SecurityMonitor.js
+   2:1   error  Dependency cycle via ./routes/auth.js:14=>../controllers/authController.js:2  import/no-cycle
+  17:44  error  'userId' is assigned a value but never used                                   no-unused-vars
+  79:5   error  Expected 'this' to be used by class async method 'emitAlert'                  class-methods-use-this
+
+C:\Users\Name\Desktop\user_profile_manager\server\utils\performanceMonitor.js
+    2:10  error  'performance' is defined but never used  no-unused-vars
+  130:7   error  Unary operator '++' used                 no-plusplus
+  133:9   error  Unary operator '++' used                 no-plusplus
+
+✖ 31 problems (22 errors, 9 warnings)
+
+npm error Lifecycle script `lint` failed with error:
+npm error code 1
+npm error path C:\Users\Name\Desktop\user_profile_manager\server
+npm error workspace user-dashboard-server@1.0.0
+npm error location C:\Users\Name\Desktop\user_profile_manager\server
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c eslint . --ext .js --fix

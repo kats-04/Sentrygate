@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    /* Ensure Tailwind is set up and @apply is supported in your build config */
+    @apply bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300;
+  }
+}
+
+@layer components {
+  /* Professional Glassmorphism effects */
+  .glass-effect {
+    /* Ensure Tailwind is set up and @apply is supported in your build config */
+    @apply backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border border-white/20 dark:border-slate-700/30 rounded-xl;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), inset 0 2px 4px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  .dark .glass-effect {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37), inset 0 2px 4px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-effect-sm {
+    /* Ensure Tailwind is set up and @apply is supported in your build config */
+    @apply backdrop-blur-sm bg-white/90 dark:bg-slate-900/90 border border-white/30 dark:border-slate-700/40 rounded-lg;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.2), inset 0 1px 2px 0 rgba(255, 255, 255, 0.3);
+  }
+
+  .glass-effect-lg {
+    /* Ensure Tailwind is set up and @apply is supported in your build config */
+    @apply backdrop-blur-lg bg-white/70 dark:bg-slate-900/70 border border-white/10 dark:border-slate-700/20 rounded-2xl;
+    box-shadow: 0 16px 64px 0 rgba(31, 38, 135, 0.4), inset 0 2px 4px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  /* Your existing card utility */
+  .glass-card {
+    /* Ensure Tailwind is set up and @apply is supported in your build config */
+    @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), inset 0 2px 4px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  /* Responsive Container */
+  .container-content {
+    /* Ensure Tailwind is set up and @apply is supported in your build config */
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+}
+
+/* Custom Scrollbar for a "Senior Dev" finish */
+@supports selector(::-webkit-scrollbar) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(100, 116, 139, 0.5);
+    border-radius: 4px;
+  }
+  .dark ::-webkit-scrollbar-thumb {
+    background: rgba(71, 85, 105, 0.5);
+  }
+}

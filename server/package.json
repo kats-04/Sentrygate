@@ -1,0 +1,49 @@
+{
+  "name": "user-dashboard-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js",
+    "test": "node run-tests.js",
+    "test:unit": "node -e \"import('./test/unit.test.js').then(m => m.runAllTests())\"",
+    "test:integration": "node -e \"import('./test/integration.test.js').then(m => m.runAllIntegrationTests())\"",
+    "lint": "eslint . --ext .js --fix",
+    "format": "prettier --write \"**/*.js\"",
+    "format:check": "prettier --check \"**/*.js\""
+  },
+  "dependencies": {
+    "@sentry/node": "^10.35.0",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "csv-parse": "^6.1.0",
+    "csv-parser": "^3.2.0",
+    "csv-stringify": "^6.3.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "express-rate-limit": "^7.5.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.4",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "node-cache": "^5.1.2",
+    "nodemailer": "^7.0.12",
+    "sharp": "^0.33.5",
+    "socket.io": "^4.8.3",
+    "speakeasy": "^2.0.0",
+    "web-push": "^3.6.7",
+    "zod": "^4.3.5"
+  },
+  "optionalDependencies": {
+    "mongodb-memory-server": "^8.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "prettier": "^3.1.0"
+  }
+}

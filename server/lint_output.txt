@@ -1,0 +1,54 @@
+
+> user-dashboard-server@1.0.0 lint
+> eslint . --ext .js --fix
+
+
+C:\Users\Name\Desktop\user_profile_manager\server\db.js
+  16:43  error  'mongodb-memory-server' should be listed in the project's dependencies, not optionalDependencies  import/no-extraneous-dependencies
+
+C:\Users\Name\Desktop\user_profile_manager\server\index.js
+    9:10  error  'fileURLToPath' is defined but never used                                                                                                                                             no-unused-vars
+   13:8   error  Using exported name 'connectDB' as identifier for default import                                                                                                                      import/no-named-as-default
+  154:45  error  Caution: `statsController` also has a named export `getStats`. Check if you meant to write `import {getStats} from './controllers/statsController.js'` instead                        import/no-named-as-default-member
+  155:66  error  Caution: `statsController` also has a named export `getActivityTrends`. Check if you meant to write `import {getActivityTrends} from './controllers/statsController.js'` instead      import/no-named-as-default-member
+  156:70  error  Caution: `statsController` also has a named export `getEngagement`. Check if you meant to write `import {getEngagement} from './controllers/statsController.js'` instead              import/no-named-as-default-member
+  157:47  error  Caution: `statsController` also has a named export `getDashboardSummary`. Check if you meant to write `import {getDashboardSummary} from './controllers/statsController.js'` instead  import/no-named-as-default-member
+
+C:\Users\Name\Desktop\user_profile_manager\server\middleware\cache.js
+  27:16  warning  Unexpected unnamed function  func-names
+
+C:\Users\Name\Desktop\user_profile_manager\server\models\ApiKey.js
+  73:26  warning  Unexpected unnamed function  func-names
+  80:36  warning  Unexpected unnamed function  func-names
+  84:32  warning  Unexpected unnamed function  func-names
+
+C:\Users\Name\Desktop\user_profile_manager\server\models\SystemSetting.js
+  28:43  warning  Unexpected unnamed async function  func-names
+
+C:\Users\Name\Desktop\user_profile_manager\server\models\User.js
+  29:24  warning  Unexpected unnamed async function  func-names
+  39:38  warning  Unexpected unnamed function        func-names
+  44:34  warning  Unexpected unnamed function        func-names
+
+C:\Users\Name\Desktop\user_profile_manager\server\models\Webhook.js
+  48:33  warning  Unexpected unnamed async function  func-names
+
+C:\Users\Name\Desktop\user_profile_manager\server\routes\activities.js
+  14:74  error  'next' is defined but never used  no-unused-vars
+
+C:\Users\Name\Desktop\user_profile_manager\server\seed-activities.js
+  34:34  error  Unary operator '++' used  no-plusplus
+
+C:\Users\Name\Desktop\user_profile_manager\server\utils\SecurityMonitor.js
+  17:35  error  'success' is defined but never used                           no-unused-vars
+  79:5   error  Expected 'this' to be used by class async method 'emitAlert'  class-methods-use-this
+
+✖ 20 problems (11 errors, 9 warnings)
+
+npm error Lifecycle script `lint` failed with error:
+npm error code 1
+npm error path C:\Users\Name\Desktop\user_profile_manager\server
+npm error workspace user-dashboard-server@1.0.0
+npm error location C:\Users\Name\Desktop\user_profile_manager\server
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c eslint . --ext .js --fix
